@@ -104,8 +104,8 @@
                 </p>
               </div>
               <div class="appointment__next_cont">
-                <button class="custom__next__button">
-                  <a href="./step3.html">Next</a>
+                <button type="button" onclick="goToNextPage()" class="custom__next__button">
+                  Next
                 </button>
               </div>
             </form>
@@ -118,5 +118,23 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Function to get query parameter by name
+
+      function goToNextPage() {
+        function getQueryParam(param) {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get(param);
+        }
+        // Get the number of applicants from the input
+
+        const numApplicants = getQueryParam("numApplicants");
+
+        if (numApplicants) {
+          // Redirect to the next page with the number of applicants in the URL
+          window.location.href = `multipleStep3.html?numApplicants=${numApplicants}`;
+        }
+      }
+    </script>
   </body>
 </html>

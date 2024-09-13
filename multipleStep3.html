@@ -81,206 +81,8 @@
               <p>$40,000</p>
             </div>
           </div>
-          <form class="side__form">
-            <h2 class="applicant__title">Applicant One</h2>
-            <div class="side__form__step3">
-              <div>
-                <label for="firstName" class="form-label custom__form__label"
-                  >First Name</label
-                >
-                <input
-                  type="text"
-                  name="firstName"
-                  class="custom__text__input form-control"
-                  placeholder="Enter first name"
-                />
-              </div>
-              <div>
-                <label for="lastName" class="form-label custom__form__label"
-                  >Last Name</label
-                >
-                <input
-                  type="text"
-                  name="lastName"
-                  class="custom__text__input form-control"
-                  placeholder="Enter last name"
-                />
-              </div>
-              <div>
-                <label for="ageCategory" class="form-label custom__form__label"
-                  >Age Category</label
-                >
-                <select
-                  id="ageCategory"
-                  class="form-select custom__form__select"
-                  aria-label="Default select example"
-                >
-                  <option
-                    selected
-                    disabled
-                    class="select__placeholder"
-                    value=""
-                  >
-                    Select age category
-                  </option>
-                  <option value="10-18">10-18</option>
-                </select>
-              </div>
-              <div>
-                <label for="emailAddress" class="form-label custom__form__label"
-                  >Email Address</label
-                >
-                <input
-                  type="email"
-                  name="emailAddress"
-                  class="custom__text__input form-control"
-                  placeholder="Enter email address"
-                />
-              </div>
-              <div>
-                <label for="phoneNumber" class="form-label custom__form__label"
-                  >Phone Number</label
-                >
-                <input
-                  type="text"
-                  name="phoneNumber"
-                  class="custom__text__input form-control"
-                  placeholder="Enter phone number"
-                />
-              </div>
-              <div class="appointment__date__cont">
-                <label for="birthDate" class="form-label custom__form__label"
-                  >Date of Birth</label
-                >
-                <input
-                  type="date"
-                  name="birthDate"
-                  id="birthDate"
-                  class="custom__date__input form-control"
-                />
-              </div>
-              <div>
-                <label for="gender" class="form-label custom__form__label"
-                  >Gender</label
-                >
-                <select
-                  id="gender"
-                  class="form-select custom__form__select"
-                  aria-label="Default select example"
-                >
-                  <option
-                    selected
-                    disabled
-                    class="select__placeholder"
-                    value=""
-                  >
-                    Select gender
-                  </option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
-              </div>
-            </div>
-            <hr class="multiple__aplicants__hr" />
-            <h2 class="applicant__title">Applicant Two</h2>
-            <div class="side__form__step3">
-              <div>
-                <label for="firstName" class="form-label custom__form__label"
-                  >First Name</label
-                >
-                <input
-                  type="text"
-                  name="firstName"
-                  class="custom__text__input form-control"
-                  placeholder="Enter first name"
-                />
-              </div>
-              <div>
-                <label for="lastName" class="form-label custom__form__label"
-                  >Last Name</label
-                >
-                <input
-                  type="text"
-                  name="lastName"
-                  class="custom__text__input form-control"
-                  placeholder="Enter last name"
-                />
-              </div>
-              <div>
-                <label for="ageCategory" class="form-label custom__form__label"
-                  >Age Category</label
-                >
-                <select
-                  id="ageCategory"
-                  class="form-select custom__form__select"
-                  aria-label="Default select example"
-                >
-                  <option
-                    selected
-                    disabled
-                    class="select__placeholder"
-                    value=""
-                  >
-                    Select age category
-                  </option>
-                  <option value="10-18">10-18</option>
-                </select>
-              </div>
-              <div>
-                <label for="emailAddress" class="form-label custom__form__label"
-                  >Email Address</label
-                >
-                <input
-                  type="email"
-                  name="emailAddress"
-                  class="custom__text__input form-control"
-                  placeholder="Enter email address"
-                />
-              </div>
-              <div>
-                <label for="phoneNumber" class="form-label custom__form__label"
-                  >Phone Number</label
-                >
-                <input
-                  type="text"
-                  name="phoneNumber"
-                  class="custom__text__input form-control"
-                  placeholder="Enter phone number"
-                />
-              </div>
-              <div class="appointment__date__cont">
-                <label for="birthDate" class="form-label custom__form__label"
-                  >Date of Birth</label
-                >
-                <input
-                  type="date"
-                  name="birthDate"
-                  id="birthDate"
-                  class="custom__date__input form-control"
-                />
-              </div>
-              <div>
-                <label for="gender" class="form-label custom__form__label"
-                  >Gender</label
-                >
-                <select
-                  id="gender"
-                  class="form-select custom__form__select"
-                  aria-label="Default select example"
-                >
-                  <option
-                    selected
-                    disabled
-                    class="select__placeholder"
-                    value=""
-                  >
-                    Select gender
-                  </option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
-              </div>
-            </div>
+          <form style="flex-grow: 1" class="w-full">
+            <div class="side__form w-full" id="formContainer"></div>
             <div class="appointment__next_cont applicant__next__button__cont">
               <button class="custom__next__button">
                 <a href="./paymentMethod.html">Next</a>
@@ -295,5 +97,89 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="./script.js"></script> -->
+    <script>
+      // Function to get query parameter by name
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      function generateForms(count) {
+        const formContainer = document.getElementById("formContainer");
+        formContainer.innerHTML = ""; // Clear previous forms
+
+        for (let i = 1; i <= count; i++) {
+          // Create a new form element for each applicant
+          const form = document.createElement("div");
+          form.classList.add("applicant-form");
+
+          form.innerHTML = `
+                  <h2 class="applicant__title">Applicant ${i}</h2>
+                  <div class="side__form__step3">
+                    <div>
+                      <label for="firstName${i}" class="form-label custom__form__label">First Name</label>
+                      <input type="text" name="firstName${i}" class="custom__text__input form-control" placeholder="Enter first name" />
+                    </div>
+                    <div>
+                      <label for="lastName${i}" class="form-label custom__form__label">Last Name</label>
+                      <input type="text" name="lastName${i}" class="custom__text__input form-control" placeholder="Enter last name" />
+                    </div>
+                    <div>
+                      <label for="ageCategory${i}" class="form-label custom__form__label">Age Category</label>
+                      <select id="ageCategory${i}" class="form-select custom__form__select">
+                        <option selected disabled class="select__placeholder" value="">Select age category</option>
+                        <option value="10-18">10-18</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="emailAddress${i}" class="form-label custom__form__label">Email Address</label>
+                      <input type="email" name="emailAddress${i}" class="custom__text__input form-control" placeholder="Enter email address" />
+                    </div>
+                    <div>
+                      <label for="phoneNumber${i}" class="form-label custom__form__label">Phone Number</label>
+                      <input type="text" name="phoneNumber${i}" class="custom__text__input form-control" placeholder="Enter phone number" />
+                    </div>
+                    <div class="appointment__date__cont">
+                      <label for="birthDate${i}" class="form-label custom__form__label">Date of Birth</label>
+                      <input type="date" name="birthDate${i}" id="birthDate${i}" class="custom__date__input form-control" />
+                    </div>
+                    <div>
+                      <label for="gender${i}" class="form-label custom__form__label">Gender</label>
+                      <select id="gender${i}" class="form-select custom__form__select">
+                        <option selected disabled class="select__placeholder" value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                      </select>
+                    </div>
+                  </div>
+
+                `;
+
+          // Add <hr> only if it's not the last form
+          if (i < count) {
+            const hr = document.createElement("hr");
+            hr.classList.add("multiple__aplicants__hr");
+            form.appendChild(hr);
+          }
+
+          // Append the form to the container
+          formContainer.appendChild(form);
+        }
+
+        // Show the submit button
+        document.getElementById("submitForm").style.display = "block";
+      }
+
+      // On page load, retrieve the number of applicants from the URL and generate the forms
+      const numApplicants = getQueryParam("numApplicants");
+      if (numApplicants) {
+        generateForms(parseInt(numApplicants));
+      }
+
+      function submitForms() {
+        alert("Forms submitted successfully!");
+      }
+    </script>
   </body>
 </html>

@@ -132,25 +132,29 @@
               </select>
             </div>
             <div>
-              <label for="noOfApplicants" class="form-label custom__form__label"
+              <label for="numApplicants" class="form-label custom__form__label"
                 >Number of Applicant (s)</label
               >
               <select
-                id="noOfApplicants"
+                id="numApplicants"
                 class="form-select custom__form__select"
                 aria-label="Default select example"
               >
-                <option selected>1</option>
-                <option value="canada">2</option>
-                <option value="maxico">3</option>
-                <option value="brazil">4</option>
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
               </select>
             </div>
           </div>
 
           <div class="step1__next__button__cont">
-            <button class="step1__next__button custom__next__button">
-              <a href="./requirements.html"> Next </a>
+            <button
+              type="button"
+              onclick="goToNextPage()"
+              class="step1__next__button custom__next__button"
+            >
+              Next
             </button>
           </div>
         </form>
@@ -161,5 +165,17 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
+    <script>
+      function goToNextPage() {
+        // Get the number of applicants from the input
+        const numApplicants = document.getElementById("numApplicants").value;
+
+        if (numApplicants) {
+          // Redirect to the next page with the number of applicants in the URL
+          window.location.href = `requirements.html?numApplicants=${numApplicants}`;
+        }
+      }
+    </script>
   </body>
 </html>
