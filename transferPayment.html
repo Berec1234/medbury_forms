@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Medbury forms</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="payment__type__container">
+      <div class="payment__overlay"></div>
+      <div class="payment__transfer__modal">
+        <button class="payment__modal__cancel">
+          <img src="./images/modalCancel.svg" alt="close" />
+        </button>
+        <div class="transfer__payment__modal">
+          <img
+            src="./images/flutterwave.svg"
+            alt="flutterwave"
+            class="flutterwave__logo"
+          />
+          <h3 class="transfer__h3">
+            Search for Access Bank on your bank app. Use this account for this
+            transaction only
+          </h3>
+          <div class="tranfer__details">
+            <div class="sideinfo__label__value">
+              <h3>BANK NAME</h3>
+              <p>Access Bank</p>
+            </div>
+            <div
+              class="d-flex justify-content-between gap-2 align-items-center w-full"
+            >
+              <div class="sideinfo__label__value">
+                <h3>ACCOUNT NUMBER</h3>
+                <p>9945678923</p>
+              </div>
+              <button class="copy__button">
+                <img src="./images/copy.svg" alt="copy" />
+              </button>
+            </div>
+
+            <div
+              class="d-flex justify-content-between gap-2 align-items-center w-full"
+            >
+              <div class="sideinfo__label__value">
+                <h3>ACCOUNT NAME</h3>
+                <p>MedlinkR Medical Service</p>
+              </div>
+              <button class="copy__button">
+                <img src="./images/copy.svg" alt="copy" />
+              </button>
+            </div>
+            <div class="sideinfo__label__value">
+              <h3>AMOUNT</h3>
+              <p>NGN 30,000</p>
+            </div>
+          </div>
+
+          <h6 class="transfer__timer">Expires in <span>09:54</span></h6>
+
+          <button class="transfer__payment__button">
+            I have made the transfer
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

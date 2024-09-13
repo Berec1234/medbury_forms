@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Medbury forms</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="form__body__container">
+      <div class="form__logosteps__container">
+        <img src="./images/medbury_form_logo.svg" alt="logo" />
+        <div class="form__steps_container">
+          <div class="active__form__step"></div>
+          <div class="active__form__step"></div>
+          <div class="active__form__step"></div>
+          <div class="inactive__form__step"></div>
+        </div>
+      </div>
+      <div class="form__content__container">
+        <div class="form__title__wrapper">
+          <button>
+            <img src="./images/back.svg" alt="back" />
+          </button>
+          <div class="form__title__container">
+            <h2>Applicant Registration</h2>
+            <p>Ensure you fill in the correct details</p>
+          </div>
+        </div>
+        <div class="form__inputs__container__step2">
+          <div class="step2__sideinfo stick__to__top">
+            <div class="sideInfo__country__cont">
+              <div class="sideInfo__country country__cont1">
+                <h3>Departure country</h3>
+                <div>
+                  <img src="./images/usa.svg" alt="usa" />
+                  <p>USA</p>
+                </div>
+              </div>
+              <img
+                src="./images/plane.svg"
+                alt="plane"
+                class="country__plane"
+              />
+              <div class="sideInfo__country country__cont2">
+                <h3>Destination country</h3>
+                <div class="country__div2">
+                  <img src="./images/ngn.svg" alt="ngn" />
+                  <p>Nigeria</p>
+                </div>
+              </div>
+            </div>
+            <div class="sideinfo__label__value">
+              <h3>Migrant Type</h3>
+              <p>Family Migrant</p>
+            </div>
+            <div class="sideinfo__label__value">
+              <h3>Travel Type</h3>
+              <p>Tempoary Migration</p>
+            </div>
+            <div class="sideinfo__label__value">
+              <h3>Migration Health Assessment Centre</h3>
+              <p>No. 12 sammie street, Lekki phase 1, Lagos</p>
+            </div>
+            <div class="sideinfo__label__value">
+              <h3>Schedule</h3>
+              <p>21-Aug-2024; 11:00 AM</p>
+            </div>
+            <div class="sideinfo__label__value">
+              <h3>Number of Applicants</h3>
+              <p>2</p>
+            </div>
+            <div class="sideinfo__label__value">
+              <h3>Total Price</h3>
+              <p>$40,000</p>
+            </div>
+          </div>
+          <form class="side__form">
+            <h2 class="applicant__title">Applicant One</h2>
+            <div class="side__form__step3">
+              <div>
+                <label for="firstName" class="form-label custom__form__label"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  name="firstName"
+                  class="custom__text__input form-control"
+                  placeholder="Enter first name"
+                />
+              </div>
+              <div>
+                <label for="lastName" class="form-label custom__form__label"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  name="lastName"
+                  class="custom__text__input form-control"
+                  placeholder="Enter last name"
+                />
+              </div>
+              <div>
+                <label for="ageCategory" class="form-label custom__form__label"
+                  >Age Category</label
+                >
+                <select
+                  id="ageCategory"
+                  class="form-select custom__form__select"
+                  aria-label="Default select example"
+                >
+                  <option
+                    selected
+                    disabled
+                    class="select__placeholder"
+                    value=""
+                  >
+                    Select age category
+                  </option>
+                  <option value="10-18">10-18</option>
+                </select>
+              </div>
+              <div>
+                <label for="emailAddress" class="form-label custom__form__label"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  name="emailAddress"
+                  class="custom__text__input form-control"
+                  placeholder="Enter email address"
+                />
+              </div>
+              <div>
+                <label for="phoneNumber" class="form-label custom__form__label"
+                  >Phone Number</label
+                >
+                <input
+                  type="text"
+                  name="phoneNumber"
+                  class="custom__text__input form-control"
+                  placeholder="Enter phone number"
+                />
+              </div>
+              <div class="appointment__date__cont">
+                <label for="birthDate" class="form-label custom__form__label"
+                  >Date of Birth</label
+                >
+                <input
+                  type="date"
+                  name="birthDate"
+                  id="birthDate"
+                  class="custom__date__input form-control"
+                />
+              </div>
+              <div>
+                <label for="gender" class="form-label custom__form__label"
+                  >Gender</label
+                >
+                <select
+                  id="gender"
+                  class="form-select custom__form__select"
+                  aria-label="Default select example"
+                >
+                  <option
+                    selected
+                    disabled
+                    class="select__placeholder"
+                    value=""
+                  >
+                    Select gender
+                  </option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+            <hr class="multiple__aplicants__hr" />
+            <h2 class="applicant__title">Applicant Two</h2>
+            <div class="side__form__step3">
+              <div>
+                <label for="firstName" class="form-label custom__form__label"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  name="firstName"
+                  class="custom__text__input form-control"
+                  placeholder="Enter first name"
+                />
+              </div>
+              <div>
+                <label for="lastName" class="form-label custom__form__label"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  name="lastName"
+                  class="custom__text__input form-control"
+                  placeholder="Enter last name"
+                />
+              </div>
+              <div>
+                <label for="ageCategory" class="form-label custom__form__label"
+                  >Age Category</label
+                >
+                <select
+                  id="ageCategory"
+                  class="form-select custom__form__select"
+                  aria-label="Default select example"
+                >
+                  <option
+                    selected
+                    disabled
+                    class="select__placeholder"
+                    value=""
+                  >
+                    Select age category
+                  </option>
+                  <option value="10-18">10-18</option>
+                </select>
+              </div>
+              <div>
+                <label for="emailAddress" class="form-label custom__form__label"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  name="emailAddress"
+                  class="custom__text__input form-control"
+                  placeholder="Enter email address"
+                />
+              </div>
+              <div>
+                <label for="phoneNumber" class="form-label custom__form__label"
+                  >Phone Number</label
+                >
+                <input
+                  type="text"
+                  name="phoneNumber"
+                  class="custom__text__input form-control"
+                  placeholder="Enter phone number"
+                />
+              </div>
+              <div class="appointment__date__cont">
+                <label for="birthDate" class="form-label custom__form__label"
+                  >Date of Birth</label
+                >
+                <input
+                  type="date"
+                  name="birthDate"
+                  id="birthDate"
+                  class="custom__date__input form-control"
+                />
+              </div>
+              <div>
+                <label for="gender" class="form-label custom__form__label"
+                  >Gender</label
+                >
+                <select
+                  id="gender"
+                  class="form-select custom__form__select"
+                  aria-label="Default select example"
+                >
+                  <option
+                    selected
+                    disabled
+                    class="select__placeholder"
+                    value=""
+                  >
+                    Select gender
+                  </option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="appointment__next_cont applicant__next__button__cont">
+              <button class="custom__next__button">Next</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

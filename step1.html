@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Medbury forms</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="form__body__container">
+      <div class="form__logosteps__container">
+        <img src="./images/medbury_form_logo.svg" alt="logo" />
+        <div class="form__steps_container">
+          <div class="active__form__step"></div>
+          <div class="inactive__form__step"></div>
+          <div class="inactive__form__step"></div>
+          <div class="inactive__form__step"></div>
+        </div>
+      </div>
+      <div class="form__content__container">
+        <div class="form__title__container">
+          <h2>Schedule Appointment</h2>
+          <p>
+            Book your health assessment now. Please have all required documents
+            ready to ensure a smooth appointment
+          </p>
+        </div>
+        <form class="form__inputs__container">
+          <div class="step1__form__cont">
+            <div>
+              <label
+                for="departureCountry"
+                class="form-label custom__form__label"
+                >Departure Country</label
+              >
+              <select
+                id="departureCountry"
+                class="form-select custom__form__select"
+                aria-label="Default select example"
+              >
+                <option selected>United State of America</option>
+                <option value="canada">Canada</option>
+                <option value="maxico">Mexico</option>
+                <option value="brazil">Brazil</option>
+              </select>
+            </div>
+            <div>
+              <label
+                for="destinationCountry"
+                class="form-label custom__form__label"
+                >Destination Country</label
+              >
+              <select
+                id="destinationCountry"
+                class="form-select custom__form__select"
+                aria-label="Default select example"
+              >
+                <option selected>Nigeria</option>
+                <option value="canada">Belgium</option>
+                <option value="maxico">Chad</option>
+                <option value="brazil">Romania</option>
+              </select>
+            </div>
+
+            <div class="flex__select__inputs">
+              <div>
+                <label for="travelType" class="form-label custom__form__label"
+                  >Travel Type</label
+                >
+                <select
+                  id="travelType"
+                  class="form-select custom__form__select"
+                  aria-label="Default select example"
+                  aria-placeholder="Select travel type"
+                >
+                  <option
+                    disabled
+                    selected
+                    class="select__placeholder"
+                    value=""
+                  >
+                    Select travel type
+                  </option>
+                  <option value="maxico">Chad</option>
+                  <option value="brazil">Romania</option>
+                </select>
+              </div>
+              <div>
+                <label for="migrantType" class="form-label custom__form__label"
+                  >Migrant Type</label
+                >
+                <select
+                  id="migrantType"
+                  class="form-select custom__form__select"
+                  aria-label="Default select example"
+                  aria-placeholder="Select migrant type"
+                >
+                  <option
+                    disabled
+                    selected
+                    class="select__placeholder"
+                    value=""
+                  >
+                    Select migrant type
+                  </option>
+                  <option value="maxico">Chad</option>
+                  <option value="brazil">Romania</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label
+                for="assessmentCenter"
+                class="form-label custom__form__label"
+                >Migration Health Assessment Centre</label
+              >
+              <select
+                id="assessmentCenter"
+                class="form-select custom__form__select"
+                aria-label="Default select example"
+              >
+                <option selected>IOM Lagos</option>
+                <option value="canada">ikoyi</option>
+                <option value="maxico">Chad</option>
+                <option value="brazil">Romania</option>
+              </select>
+            </div>
+            <div>
+              <label for="noOfApplicants" class="form-label custom__form__label"
+                >Number of Applicant (s)</label
+              >
+              <select
+                id="noOfApplicants"
+                class="form-select custom__form__select"
+                aria-label="Default select example"
+              >
+                <option selected>1</option>
+                <option value="canada">2</option>
+                <option value="maxico">3</option>
+                <option value="brazil">4</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="step1__next__button__cont">
+            <button class="step1__next__button custom__next__button">
+              Next
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
